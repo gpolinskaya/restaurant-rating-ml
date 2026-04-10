@@ -55,9 +55,11 @@ https://business.yelp.com/data/resources/open-dataset
 - `requirements.txt` — список зависимостей проекта.
 
 ## Запуск проекта локально
-1. Установить зависимости:
-```bash
-pip install -r requirements.txt
+1. Установить зависимости: pip install -r requirements.txt
+2. Поместить файл модели model.pkl в папку model/, если он не загружен в репозиторий.
+3. Запустить API: uvicorn app.main:app --reload
+4. Запустить Streamlit-приложение: streamlit run app/streamlit_app.py
+5. Проверка кода: `streamlit_app.py` должен обращаться к API_URL = "http://127.0.0.1:8000/predict"
 
 ## Практическая значимость
 Разработанная система может быть полезна для:
