@@ -59,7 +59,9 @@ https://business.yelp.com/data/resources/open-dataset
 2. Поместить файл модели model.pkl в папку model/, если он не загружен в репозиторий.
 3. Запустить API: uvicorn app.main:app --reload
 4. Запустить Streamlit-приложение: streamlit run app/streamlit_app.py
-5. Проверка кода: `streamlit_app.py` должен обращаться к API_URL = "http://127.0.0.1:8000/predict"
+5. Открыть в браузере:
+  API docs: http://127.0.0.1:8000/docs
+  Streamlit: http://localhost:8501
 
 ## Практическая значимость
 Разработанная система может быть полезна для:
